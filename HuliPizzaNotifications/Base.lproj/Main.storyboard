@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HuliPizzaNotifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Pizza" translatesAutoresizingMaskIntoConstraints="NO" id="Jfv-mD-4Ss">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uyx-6q-8gh">
+                                <rect key="frame" x="20" y="50" width="374" height="666"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huli Pizza Co." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rni-4x-AKR">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="85"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="36"/>
+                                        <color key="textColor" name="Sunglow"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVL-Qc-cLW">
+                                        <rect key="frame" x="0.0" y="97" width="374" height="84.666666666666686"/>
+                                        <color key="backgroundColor" name="Honeydew"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                        <size key="titleShadowOffset" width="-1" height="-1"/>
+                                        <state key="normal" title="Schedule A Pizza">
+                                            <color key="titleColor" name="Burgundy"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="schedulePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPF-GJ-CaE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8Q-Ie-hkz">
+                                        <rect key="frame" x="0.0" y="193.66666666666666" width="374" height="84.999999999999972"/>
+                                        <color key="backgroundColor" name="Honeydew"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                        <size key="titleShadowOffset" width="-1" height="-1"/>
+                                        <state key="normal" title="Make A Pizza">
+                                            <color key="titleColor" name="Burgundy"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="makePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tvb-Rg-fH8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rQ-wX-yfY">
+                                        <rect key="frame" x="0.0" y="290.66666666666669" width="374" height="84.666666666666686"/>
+                                        <color key="backgroundColor" name="Honeydew"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                        <size key="titleShadowOffset" width="-1" height="-1"/>
+                                        <state key="normal" title="Next Pizza Step">
+                                            <color key="titleColor" name="Burgundy"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextPizzaStep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qRs-5B-D3T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CI-In-GUd">
+                                        <rect key="frame" x="0.0" y="387.33333333333331" width="374" height="85"/>
+                                        <color key="backgroundColor" name="Honeydew"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                        <size key="titleShadowOffset" width="-1" height="-1"/>
+                                        <state key="normal" title="View Pending Notifications">
+                                            <color key="titleColor" name="Burgundy"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="viewPendingPizzas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIh-5m-xcZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55m-ki-MT0">
+                                        <rect key="frame" x="0.0" y="484.33333333333343" width="374" height="84.666666666666686"/>
+                                        <color key="backgroundColor" name="Honeydew"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                        <size key="titleShadowOffset" width="-1" height="-1"/>
+                                        <state key="normal" title="View Delivered Notifications">
+                                            <color key="titleColor" name="Burgundy"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="viewDeliveredPizzas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qlv-Pf-9he"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uox-pP-7TK">
+                                        <rect key="frame" x="0.0" y="581" width="374" height="85"/>
+                                        <color key="backgroundColor" name="Honeydew"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                        <size key="titleShadowOffset" width="-1" height="-1"/>
+                                        <state key="normal" title="Remove Notification">
+                                            <color key="titleColor" name="Burgundy"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="removeNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4fS-JZ-rJE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="Dark Jungle Green"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uyx-6q-8gh" secondAttribute="bottom" constant="20" id="Jqo-40-USN"/>
+                            <constraint firstItem="Jfv-mD-4Ss" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KZZ-RN-JzS"/>
+                            <constraint firstAttribute="trailing" secondItem="Jfv-mD-4Ss" secondAttribute="trailing" id="Xat-yq-wjI"/>
+                            <constraint firstAttribute="bottom" secondItem="Jfv-mD-4Ss" secondAttribute="bottom" id="dDu-Mt-yI3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uyx-6q-8gh" secondAttribute="trailing" constant="20" id="itf-kP-OwY"/>
+                            <constraint firstItem="uyx-6q-8gh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lRl-6f-pGj"/>
+                            <constraint firstItem="uyx-6q-8gh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="swf-1g-h6C"/>
+                            <constraint firstItem="Jfv-mD-4Ss" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xsx-A1-Whk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="uyx-6q-8gh" id="vpH-Ny-hjR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pizza" width="1024" height="1365"/>
+        <namedColor name="Burgundy">
+            <color red="0.50196078431372548" green="0.0" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark Jungle Green">
+            <color red="0.12156862745098039" green="0.15294117647058825" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Honeydew">
+            <color red="0.95294117647058818" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sunglow">
+            <color red="1" green="0.82352941176470584" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
